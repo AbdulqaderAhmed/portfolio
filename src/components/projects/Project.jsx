@@ -14,7 +14,7 @@ export default function Project() {
 
   return (
     <div className="pt-10">
-      <h1 className="text-3xl text-center font-medium">Projects</h1>
+      <h1 className="text-4xl text-center font-medium underline">Projects</h1>
 
       <div className="grid md:mx-24 md:grid-cols-3">
         <div
@@ -24,7 +24,7 @@ export default function Project() {
           <img src={Background1} alt="" className="" />
           <div className="p-6">
             <h3 className="text-xl font-medium">Project Name</h3>
-            <p className="text-gray-800 py-5">
+            <p className="text-gray-300 text-sm py-5">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non id
               maiores, assumenda et iste saepe doloribus nostrum sapiente est
             </p>
@@ -38,7 +38,7 @@ export default function Project() {
           <img src={Background1} alt="" />
           <div className="p-6">
             <h3 className="text-xl font-medium">Project Name</h3>
-            <p className="text-gray-800 py-5">
+            <p className="text-gray-300 text-sm py-5">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non id
               maiores, assumenda et iste saepe doloribus nostrum sapiente est
             </p>
@@ -52,7 +52,7 @@ export default function Project() {
           <img src={Background1} alt="" />
           <div className="p-6">
             <h3 className="text-xl font-medium">Project Name</h3>
-            <p className="text-gray-800 py-5">
+            <p className="text-gray-300 text-sm py-5">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non id
               maiores, assumenda et iste saepe doloribus nostrum sapiente est
             </p>
@@ -66,7 +66,7 @@ export default function Project() {
           <img src={Background1} alt="" className="" />
           <div className="p-6">
             <h3 className="text-xl font-medium">Project Name</h3>
-            <p className="text-gray-800 py-5">
+            <p className="text-gray-300 text-sm py-5">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non id
               maiores, assumenda et iste saepe doloribus nostrum sapiente est
             </p>
@@ -80,7 +80,7 @@ export default function Project() {
           <img src={Background1} alt="" />
           <div className="p-6">
             <h3 className="text-xl font-medium">Project Name</h3>
-            <p className="text-gray-800 py-5">
+            <p className="text-gray-300 text-sm py-5">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non id
               maiores, assumenda et iste saepe doloribus nostrum sapiente est
             </p>
@@ -94,7 +94,7 @@ export default function Project() {
           <img src={Background1} alt="" />
           <div className="p-6">
             <h3 className="text-xl font-medium">Project Name</h3>
-            <p className="text-gray-800 py-5">
+            <p className="text-gray-300 text-sm py-5">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non id
               maiores, assumenda et iste saepe doloribus nostrum sapiente est
             </p>
