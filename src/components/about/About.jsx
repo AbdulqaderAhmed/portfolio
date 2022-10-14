@@ -22,8 +22,8 @@ export default function About() {
           I'm{" "}
           <Typical
             loop={Infinity}
-            wrapper="b"
-            steps={["web developer 💻", "fullstack developer 😍"]}
+            wrapper="a"
+            steps={["web developer", "fullstack developer"]}
           />
         </h3>
         <p className="py-3 text-gray-300 text-md leading-6">

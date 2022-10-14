@@ -24,12 +24,12 @@ export default function Skill() {
   return (
     <div className="mt-3">
       <h1 className="text-4xl text-center font-medium underline">Skills</h1>
-      <div className="grid overflow-hidden md:grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-4">
         <div
           className="my-10 mx-auto bg-gradient-to-tr from-indigo-700 rounded-md shadow-lg"
           data-aos="fade-down-right"
         >
-          <div className="py-5 px-2">
+          <div className="px-3 py-5">
             <h3 className="text-xl text-center font-normal pb-5">Front-end</h3>
 
             <div className="flex justify-center gap-12 text-white ">
@@ -67,12 +67,10 @@ export default function Skill() {
           className="my-10 mx-auto bg-gradient-to-tr from-indigo-700 rounded-md shadow-lg"
           data-aos="fade-down-left"
         >
-          <div className="px-8 py-5">
-            <h3 className="text-2xl text-center font-normal pb-5">
-              Backend devlopment
-            </h3>
+          <div className="px-3 py-5">
+            <h3 className="text-2xl text-center font-normal pb-5">Backend</h3>
 
-            <div className="flex justify-center gap-12 text-white ">
+            <div className="flex justify-center gap-8 text-white ">
               <div className="">
                 <h4 className="text-md font-medium mb-3">Mysql</h4>
                 <img
@@ -107,10 +105,10 @@ export default function Skill() {
           className="my-10 mx-auto bg-gradient-to-tr from-indigo-700 rounded-md shadow-lg"
           data-aos="fade-up-right"
         >
-          <div className="px-8 py-5">
+          <div className="px-3 py-5">
             <h3 className="text-2xl text-center font-normal pb-5">Framework</h3>
 
-            <div className="flex justify-center gap-8 text-white ">
+            <div className="gap-8 grid grid-cols-2 text-white ">
               <div className="">
                 <h4 className="text-md font-medium mb-3">Laravel</h4>
                 <img
@@ -154,7 +152,7 @@ export default function Skill() {
           className="my-10 mx-auto bg-gradient-to-tr from-indigo-700 rounded-md shadow-lg"
           data-aos="fade-up-left"
         >
-          <div className="px-8 py-5">
+          <div className="px-3 py-5">
             <h3 className="text-2xl text-center font-normal pb-5">Extra</h3>
 
             <div className="flex justify-center gap-12 text-white ">
