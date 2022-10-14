@@ -17,7 +17,7 @@ export default function Contact() {
         </div>
 
         <div className="flex space-x-3 pb-4 overflow-auto md:justify-center">
-          <h3 className="text-xl">E-mail:</h3>
+          <h3 className="text-xl">Email:</h3>
           <p className="text-sm pt-1 px-auto">abdulqaderahmed32@gmail.com</p>
         </div>
 
