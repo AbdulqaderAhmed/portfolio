@@ -13,7 +13,7 @@ export default function App() {
         <Header />
       </header>
 
-      <main className="px-10">
+      <main className="px-4">
         <About />
         <Skill />
         <Project />

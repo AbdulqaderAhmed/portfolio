@@ -24,15 +24,13 @@ export default function Skill() {
   return (
     <div className="mt-3">
       <h1 className="text-4xl text-center font-medium underline">Skills</h1>
-      <div className="grid md:grid-cols-2">
+      <div className="grid overflow-hidden md:grid-cols-2">
         <div
           className="my-10 mx-auto bg-gradient-to-tr from-indigo-700 rounded-md shadow-lg"
           data-aos="fade-down-right"
         >
-          <div className="px-8 py-5">
-            <h3 className="text-2xl text-center font-normal pb-5">
-              Front-end devlopment
-            </h3>
+          <div className="py-5 px-2">
+            <h3 className="text-xl text-center font-normal pb-5">Front-end</h3>
 
             <div className="flex justify-center gap-12 text-white ">
               <div className="">

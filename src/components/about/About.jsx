@@ -15,9 +15,9 @@ export default function About() {
   });
 
   return (
-    <div className="text-center p-12 grid md:grid-cols-2">
+    <div className="text-center py-12 px-auto grid md:grid-cols-2">
       <div className="text-center md:px-5 md:py-10" data-aos="fade-right">
-        <h2 className="text-3xl font-medium py-2">Abdulqader Ahmed</h2>
+        <h2 className="text-3xl font-medium py-2">Hi, I'm Abdulqader Ahmed</h2>
         <h3 className="text-xl font-medium py-2">
           I'm{" "}
           <Typical
