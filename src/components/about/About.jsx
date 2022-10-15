@@ -6,6 +6,7 @@ import {
 } from "react-icons/ai";
 import AOS from "aos";
 import Typical from "react-typical";
+import Abdu from "../../assets/image/abdu2.png";
 
 export default function About() {
   useEffect(() => {
@@ -15,8 +16,8 @@ export default function About() {
   });
 
   return (
-    <div className="text-center py-12 px-auto grid md:grid-cols-2">
-      <div className="text-center md:px-5 md:py-10" data-aos="fade-right">
+    <div className="text-center py-12 px-auto grid md:grid-cols-2 lg:px-20 lg:py-15">
+      <div className="text-center md:px-5 md:py-10 " data-aos="fade-right">
         <h2 className="text-4xl text-center font-medium py-2">
           Hi, I'm Abdulqader Ahmed
         </h2>
@@ -25,27 +26,55 @@ export default function About() {
           <Typical
             loop={Infinity}
             wrapper="a"
-            steps={["web developer", "fullstack developer"]}
+            steps={[
+              "fullstack web developer",
+              "fast learner",
+              "communicator",
+              "strategic thinker",
+              "inovative",
+            ]}
           />
         </h3>
-        <p className="py-3 text-gray-300 text-md leading-6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis neque
-          nostrum odio officiis doloribus numquam quo, eos vitae ratione
-          consectetur beatae placeat eaque nulla eius suscipit voluptatibus
-          libero sed minima.
+        <p className="py-3 text-gray-200 md:text-gray-300 text-md leading-6">
+          Diligent software engineer with 3 months of experience in web
+          application development and eager to broaden my horizons and work on
+          different projects and responsibilities. I'm interested in developing
+          innovative initiatives that increase the efficiency and performance of
+          organizations. To design trustworthy and user-friendly solutions.
+          Experienced in design software that is customized to match a company's
+          organizational needs, emphasize their core skills, and enhance their
+          success, a confident communicator, strategic thinker, and imaginative
+          creator.
         </p>
         <div className="flex justify-center text-4xl gap-10 py-3 text-gray-900">
-          <AiFillTwitterCircle />
-          <AiFillGithub />
-          <AiFillLinkedin />
+          <a
+            href="#"
+            className="hover:scale-125 hover:text-black ease-linear duration-150"
+          >
+            <AiFillTwitterCircle />
+          </a>
+
+          <a
+            href="#"
+            className="hover:scale-125 hover:text-black ease-linear duration-150"
+          >
+            <AiFillGithub />
+          </a>
+
+          <a
+            href="#"
+            className="hover:scale-125 hover:text-black ease-linear duration-150"
+          >
+            <AiFillLinkedin />
+          </a>
         </div>
       </div>
 
       <div
-        className="bg-gradient-to-b from-indigo-700 rounded-full h-80 w-80 my-5 mx-auto"
+        className="bg-gradient-to-b from-cyan-600 rounded-full h-80 w-80 my-5 mx-auto overflow-hidden md:mt-40 lg:mt-24"
         data-aos="fade-left"
       >
-        <img src="#" alt="" />
+        <img src={Abdu} alt="" />
       </div>
     </div>
   );

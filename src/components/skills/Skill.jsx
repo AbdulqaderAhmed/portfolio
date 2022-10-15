@@ -24,7 +24,7 @@ export default function Skill() {
   return (
     <div className="mt-3">
       <h1 className="text-4xl text-center font-medium underline">Skills</h1>
-      <div className="grid grid-cols-1 md:grid-cols-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <div
           className="my-10 mx-auto bg-gradient-to-tr from-indigo-700 rounded-md shadow-lg"
           data-aos="fade-down-right"

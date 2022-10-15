@@ -16,88 +16,100 @@ export default function Project() {
     <div className="pt-10">
       <h1 className="text-4xl text-center font-medium underline">Projects</h1>
 
-      <div className="grid md:mx-24 md:grid-cols-3">
-        <div
-          className=" bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8"
-          data-aos="zoom-out-right"
-        >
-          <img src={Background1} alt="" className="" />
-          <div className="p-6">
-            <h3 className="text-xl font-medium">Project Name</h3>
-            <p className="text-gray-300 text-sm py-5">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non id
-              maiores, assumenda et iste saepe doloribus nostrum sapiente est
-            </p>
+      <div className="grid  md:grid-cols-2 lg:grid-cols-3">
+        <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
+          <div
+            className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8"
+            data-aos="zoom-out-right"
+          >
+            <img src={Background1} alt="" className="" />
+            <div className="p-6 hover:bg-pink-700">
+              <h3 className="text-xl font-medium">Project Name</h3>
+              <p className="text-gray-300 text-sm py-5">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non id
+                maiores, assumenda et iste saepe doloribus nostrum sapiente est
+              </p>
+            </div>
           </div>
         </div>
 
-        <div
-          className=" bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8"
-          data-aos="zoom-out-down"
-        >
-          <img src={Background1} alt="" />
-          <div className="p-6">
-            <h3 className="text-xl font-medium">Project Name</h3>
-            <p className="text-gray-300 text-sm py-5">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non id
-              maiores, assumenda et iste saepe doloribus nostrum sapiente est
-            </p>
+        <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
+          <div
+            className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8"
+            data-aos="zoom-out-right"
+          >
+            <img src={Background1} alt="" className="" />
+            <div className="p-6 hover:bg-pink-700">
+              <h3 className="text-xl font-medium">Project Name</h3>
+              <p className="text-gray-300 text-sm py-5">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non id
+                maiores, assumenda et iste saepe doloribus nostrum sapiente est
+              </p>
+            </div>
           </div>
         </div>
 
-        <div
-          className=" bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8"
-          data-aos="zoom-out-left"
-        >
-          <img src={Background1} alt="" />
-          <div className="p-6">
-            <h3 className="text-xl font-medium">Project Name</h3>
-            <p className="text-gray-300 text-sm py-5">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non id
-              maiores, assumenda et iste saepe doloribus nostrum sapiente est
-            </p>
+        <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
+          <div
+            className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8"
+            data-aos="zoom-out-right"
+          >
+            <img src={Background1} alt="" className="" />
+            <div className="p-6 hover:bg-pink-700">
+              <h3 className="text-xl font-medium">Project Name</h3>
+              <p className="text-gray-300 text-sm py-5">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non id
+                maiores, assumenda et iste saepe doloribus nostrum sapiente est
+              </p>
+            </div>
           </div>
         </div>
 
-        <div
-          className=" bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8"
-          data-aos="zoom-out-right"
-        >
-          <img src={Background1} alt="" className="" />
-          <div className="p-6">
-            <h3 className="text-xl font-medium">Project Name</h3>
-            <p className="text-gray-300 text-sm py-5">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non id
-              maiores, assumenda et iste saepe doloribus nostrum sapiente est
-            </p>
+        <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
+          <div
+            className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8"
+            data-aos="zoom-out-right"
+          >
+            <img src={Background1} alt="" className="" />
+            <div className="p-6 hover:bg-pink-700">
+              <h3 className="text-xl font-medium">Project Name</h3>
+              <p className="text-gray-300 text-sm py-5">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non id
+                maiores, assumenda et iste saepe doloribus nostrum sapiente est
+              </p>
+            </div>
           </div>
         </div>
 
-        <div
-          className=" bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8"
-          data-aos="zoom-out-up"
-        >
-          <img src={Background1} alt="" />
-          <div className="p-6">
-            <h3 className="text-xl font-medium">Project Name</h3>
-            <p className="text-gray-300 text-sm py-5">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non id
-              maiores, assumenda et iste saepe doloribus nostrum sapiente est
-            </p>
+        <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
+          <div
+            className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8"
+            data-aos="zoom-out-right"
+          >
+            <img src={Background1} alt="" className="" />
+            <div className="p-6 hover:bg-pink-700">
+              <h3 className="text-xl font-medium">Project Name</h3>
+              <p className="text-gray-300 text-sm py-5">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non id
+                maiores, assumenda et iste saepe doloribus nostrum sapiente est
+              </p>
+            </div>
           </div>
         </div>
 
-        <div
-          className=" bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8"
-          data-aos="zoom-out-left"
-        >
-          <img src={Background1} alt="" />
-          <div className="p-6">
-            <h3 className="text-xl font-medium">Project Name</h3>
-            <p className="text-gray-300 text-sm py-5">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non id
-              maiores, assumenda et iste saepe doloribus nostrum sapiente est
-            </p>
+        <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
+          <div
+            className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8"
+            data-aos="zoom-out-right"
+          >
+            <img src={Background1} alt="" className="" />
+            <div className="p-6 hover:bg-pink-700">
+              <h3 className="text-xl font-medium">Project Name</h3>
+              <p className="text-gray-300 text-sm py-5">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non id
+                maiores, assumenda et iste saepe doloribus nostrum sapiente est
+              </p>
+            </div>
           </div>
         </div>
       </div>
