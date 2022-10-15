@@ -25,9 +25,9 @@ export default function About() {
           I'm{" "}
           <Typical
             loop={Infinity}
-            wrapper="a"
+            wrapper="i"
             steps={[
-              "fullstack web developer",
+              "web developer",
               "fast learner",
               "communicator",
               "strategic thinker",
