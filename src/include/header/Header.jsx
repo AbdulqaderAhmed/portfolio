@@ -1,5 +1,6 @@
 import React from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import CV from "../../assets/file/AbduCV.pdf";
 
 export default function Header({ handleClick }) {
   return (
@@ -12,10 +13,14 @@ export default function Header({ handleClick }) {
             onClick={handleClick}
           />
         </li>
-        <li>
-          <button className="bg-gradient-to-r from-indigo-700 to-orange-700 p-2 rounded-lg text-white">
+        <li className="hover:scale-110 ease-linear duration-500 pt-2">
+          <a
+            className="bg-gradient-to-r from-indigo-700 to-orange-700 p-2 rounded-lg text-white"
+            donwload
+            href={CV}
+          >
             Resume
-          </button>
+          </a>
         </li>
       </ul>
     </nav>
