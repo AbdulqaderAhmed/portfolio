@@ -30,7 +30,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/abdulqader-ahmed-a1a18a239/"
+            href="https://github.com/AbdulqaderAhmed"
             className="hover:scale-125 hover:text-black ease-linear duration-150"
           >
             <AiFillGithub />
