@@ -48,21 +48,21 @@ export default function About() {
         </p>
         <div className="flex justify-center text-4xl gap-10 py-3 text-gray-900">
           <a
-            href="#"
+            href="https://twitter.com/Abdulqa67633591"
             className="hover:scale-125 hover:text-black ease-linear duration-150"
           >
             <AiFillTwitterCircle />
           </a>
 
           <a
-            href="#"
+            href="https://github.com/AbdulqaderAhmed"
             className="hover:scale-125 hover:text-black ease-linear duration-150"
           >
             <AiFillGithub />
           </a>
 
           <a
-            href="#"
+            href="https://www.linkedin.com/in/abdulqader-ahmed-a1a18a239/"
             className="hover:scale-125 hover:text-black ease-linear duration-150"
           >
             <AiFillLinkedin />

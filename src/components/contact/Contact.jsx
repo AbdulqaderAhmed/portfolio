@@ -23,21 +23,21 @@ export default function Contact() {
 
         <div className="flex justify-center space-x-6 items-center text-4xl text-gray-900">
           <a
-            href="#"
+            href="https://twitter.com/Abdulqa67633591"
             className="hover:scale-125 hover:text-black ease-linear duration-150"
           >
             <AiFillTwitterCircle />
           </a>
 
           <a
-            href="#"
+            href="https://www.linkedin.com/in/abdulqader-ahmed-a1a18a239/"
             className="hover:scale-125 hover:text-black ease-linear duration-150"
           >
             <AiFillGithub />
           </a>
 
           <a
-            href="#"
+            href="https://www.linkedin.com/in/abdulqader-ahmed-a1a18a239/"
             className="hover:scale-125 hover:text-black ease-linear duration-150"
           >
             <AiFillLinkedin />
