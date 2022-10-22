@@ -23,6 +23,7 @@ export default function Project() {
                 <h3 className="text-xl font-medium">Blog</h3>
                 <a
                   href="https://github.com/AbdulqaderAhmed/life-hack-blog"
+                  target="_blank"
                   className="pt-1"
                 >
                   <FaLink className="cursor-pointer" />
@@ -44,6 +45,7 @@ export default function Project() {
                 <h3 className="text-xl font-medium">Let's Chat</h3>
                 <a
                   href="https://github.com/AbdulqaderAhmed/laravel-chat"
+                  target="_blank"
                   className="pt-1"
                 >
                   <FaLink className="cursor-pointer" />
@@ -65,6 +67,7 @@ export default function Project() {
                 <h3 className="text-xl font-medium">E-commerce</h3>
                 <a
                   href="https://github.com/AbdulqaderAhmed/laravel-ecommerce"
+                  target="_blank"
                   className="pt-1"
                 >
                   <FaLink className="cursor-pointer" />
@@ -86,6 +89,7 @@ export default function Project() {
                 <h3 className="text-xl font-medium">Employee Management</h3>
                 <a
                   href="https://github.com/AbdulqaderAhmed/employee-laravel"
+                  target="_blank"
                   className="pt-1"
                 >
                   <FaLink className="cursor-pointer" />
@@ -107,6 +111,7 @@ export default function Project() {
                 <h3 className="text-xl font-medium">Ocean Of Movies</h3>
                 <a
                   href="https://github.com/AbdulqaderAhmed/Ocean-of-movies-react"
+                  target="_blank"
                   className="pt-1"
                 >
                   <FaLink className="cursor-pointer" />
@@ -131,6 +136,7 @@ export default function Project() {
                 </h3>
                 <a
                   href="https://github.com/AbdulqaderAhmed/nile-insurance-laravel"
+                  target="_blank"
                   className="pt-1"
                 >
                   <FaLink className="cursor-pointer" />
@@ -152,6 +158,7 @@ export default function Project() {
                 <h3 className="text-xl font-medium">Side-hustle Resturant</h3>
                 <a
                   href="https://github.com/AbdulqaderAhmed/SideHustle-Restaurant"
+                  target="_blank"
                   className="pt-1"
                 >
                   <FaLink className="cursor-pointer" />
@@ -173,6 +180,7 @@ export default function Project() {
                 <h3 className="text-xl font-medium">Tenawo</h3>
                 <a
                   href="https://github.com/AbdulqaderAhmed/Tenawo"
+                  target="_blank"
                   className="pt-1"
                 >
                   <FaLink className="cursor-pointer" />
