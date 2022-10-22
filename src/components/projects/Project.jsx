@@ -8,30 +8,23 @@ import Nile from "../../assets/image/Nile.png";
 import Resturant from "../../assets/image/resturant.png";
 import Tenawo from "../../assets/image/Tenawo.png";
 import { FaLink } from "react-icons/fa";
-import AOS from "aos";
 
 export default function Project() {
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-    });
-  });
-
   return (
     <div className="pt-10">
       <h1 className="text-4xl text-center font-medium underline">Portfolio</h1>
 
       <div className="grid  md:grid-cols-2 lg:grid-cols-3">
         <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div
-            className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8"
-            data-aos="zoom-out-right"
-          >
+          <div className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8">
             <img src={Blog} alt="blog" className="" />
             <div className="p-6 hover:bg-pink-700">
               <div className="flex justify-between">
                 <h3 className="text-xl font-medium">Blog</h3>
-                <a className="pt-1">
+                <a
+                  href="https://github.com/AbdulqaderAhmed/life-hack-blog"
+                  className="pt-1"
+                >
                   <FaLink className="cursor-pointer" />
                 </a>
               </div>
@@ -44,15 +37,15 @@ export default function Project() {
         </div>
 
         <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div
-            className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8"
-            data-aos="zoom-out-right"
-          >
+          <div className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8">
             <img src={Chat} alt="chat" className="" />
             <div className="p-6 hover:bg-pink-700">
               <div className="flex justify-between">
                 <h3 className="text-xl font-medium">Let's Chat</h3>
-                <a className="pt-1">
+                <a
+                  href="https://github.com/AbdulqaderAhmed/laravel-chat"
+                  className="pt-1"
+                >
                   <FaLink className="cursor-pointer" />
                 </a>
               </div>
@@ -65,15 +58,15 @@ export default function Project() {
         </div>
 
         <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div
-            className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8"
-            data-aos="zoom-out-right"
-          >
+          <div className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8">
             <img src={Ecom} alt="ecommerce" className="" />
             <div className="p-6 hover:bg-pink-700">
               <div className="flex justify-between">
                 <h3 className="text-xl font-medium">E-commerce</h3>
-                <a className="pt-1">
+                <a
+                  href="https://github.com/AbdulqaderAhmed/laravel-ecommerce"
+                  className="pt-1"
+                >
                   <FaLink className="cursor-pointer" />
                 </a>
               </div>
@@ -86,15 +79,15 @@ export default function Project() {
         </div>
 
         <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div
-            className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8"
-            data-aos="zoom-out-right"
-          >
+          <div className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8">
             <img src={Employee} alt="employee" className="" />
             <div className="p-6 hover:bg-pink-700">
               <div className="flex justify-between">
                 <h3 className="text-xl font-medium">Employee Management</h3>
-                <a className="pt-1">
+                <a
+                  href="https://github.com/AbdulqaderAhmed/employee-laravel"
+                  className="pt-1"
+                >
                   <FaLink className="cursor-pointer" />
                 </a>
               </div>
@@ -107,15 +100,15 @@ export default function Project() {
         </div>
 
         <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div
-            className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8"
-            data-aos="zoom-out-right"
-          >
+          <div className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8">
             <img src={Movie3} alt="movie" className="" />
             <div className="p-6 hover:bg-pink-700">
               <div className="flex justify-between">
                 <h3 className="text-xl font-medium">Ocean Of Movies</h3>
-                <a className="pt-1">
+                <a
+                  href="https://github.com/AbdulqaderAhmed/Ocean-of-movies-react"
+                  className="pt-1"
+                >
                   <FaLink className="cursor-pointer" />
                 </a>
               </div>
@@ -129,17 +122,17 @@ export default function Project() {
         </div>
 
         <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div
-            className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8"
-            data-aos="zoom-out-right"
-          >
+          <div className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8">
             <img src={Nile} alt="nile" className="" />
             <div className="p-6 hover:bg-pink-700">
               <div className="flex justify-between">
                 <h3 className="text-xl font-medium">
                   Nile Insurance Car Price System
                 </h3>
-                <a className="pt-1">
+                <a
+                  href="https://github.com/AbdulqaderAhmed/nile-insurance-laravel"
+                  className="pt-1"
+                >
                   <FaLink className="cursor-pointer" />
                 </a>
               </div>
@@ -152,15 +145,15 @@ export default function Project() {
         </div>
 
         <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div
-            className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8"
-            data-aos="zoom-out-right"
-          >
+          <div className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8">
             <img src={Resturant} alt="resturant" className="" />
             <div className="p-6 hover:bg-pink-700">
               <div className="flex justify-between">
                 <h3 className="text-xl font-medium">Side-hustle Resturant</h3>
-                <a className="pt-1">
+                <a
+                  href="https://github.com/AbdulqaderAhmed/SideHustle-Restaurant"
+                  className="pt-1"
+                >
                   <FaLink className="cursor-pointer" />
                 </a>
               </div>
@@ -173,15 +166,15 @@ export default function Project() {
         </div>
 
         <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div
-            className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8"
-            data-aos="zoom-out-right"
-          >
+          <div className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8">
             <img src={Tenawo} alt="tenawo" className="" />
             <div className="p-6 hover:bg-pink-700">
               <div className="flex justify-between">
                 <h3 className="text-xl font-medium">Tenawo</h3>
-                <a className="pt-1">
+                <a
+                  href="https://github.com/AbdulqaderAhmed/Tenawo"
+                  className="pt-1"
+                >
                   <FaLink className="cursor-pointer" />
                 </a>
               </div>

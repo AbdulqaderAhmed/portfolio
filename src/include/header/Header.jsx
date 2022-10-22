@@ -9,7 +9,7 @@ export default function Header() {
       <ul className="flex flex-row gap-4">
         <li className="hover:scale-110 ease-linear duration-500 pt-2">
           <a
-            className="bg-gradient-to-r from-indigo-700 to-orange-700 p-2 rounded-lg text-white"
+            className="bg-gradient-to-r from-indigo-700 to-orange-700 p-2 rounded-lg text-white animate-pulse"
             donwload
             href={CV}
           >

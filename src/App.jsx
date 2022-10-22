@@ -8,7 +8,7 @@ import Header from "./include/header/Header";
 import Footer from "./include/footer/Footer";
 export default function App() {
   return (
-    <div className="bg-gradient-to-tr from-indigo-700 to-cyan-500 min-h-screen min-w-full text-white font-mono overflow-hidden">
+    <div className="bg-slate-900 min-h-screen min-w-full text-white font-mono overflow-hidden">
       <header>
         <Header />
       </header>
