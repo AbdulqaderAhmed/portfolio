@@ -18,7 +18,7 @@ export default function About() {
         <h3 className="text-xl text-center text-emerald-700 font-medium py-2">
           Full Stack Web Developer
         </h3>
-        <ul className="py-3 list-disc text-gray-200 md:text-gray-300 text-md leading-8">
+        <ul className="py-3 mx-auto list-disc text-justify text-gray-200 md:text-gray-300 text-md leading-8">
           <li>
             Diligent software engineer with 3 months of experience in web
             application development.
