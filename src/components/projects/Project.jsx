@@ -16,7 +16,7 @@ export default function Project() {
 
       <div className="grid  md:grid-cols-2 lg:grid-cols-3">
         <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8">
+          <div className="bg-transparent rounded-md shadow-md m-4 md:m-8">
             <img src={Blog} alt="blog" className="" />
             <div className="p-6 hover:bg-pink-700">
               <div className="flex justify-between">
@@ -37,7 +37,7 @@ export default function Project() {
         </div>
 
         <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8">
+          <div className="bg-transparent rounded-md shadow-md m-4 md:m-8">
             <img src={Chat} alt="chat" className="" />
             <div className="p-6 hover:bg-pink-700">
               <div className="flex justify-between">
@@ -58,7 +58,7 @@ export default function Project() {
         </div>
 
         <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8">
+          <div className="bg-transparent rounded-md shadow-md m-4 md:m-8">
             <img src={Ecom} alt="ecommerce" className="" />
             <div className="p-6 hover:bg-pink-700">
               <div className="flex justify-between">
@@ -79,7 +79,7 @@ export default function Project() {
         </div>
 
         <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8">
+          <div className="bg-transparent rounded-md shadow-md m-4 md:m-8">
             <img src={Employee} alt="employee" className="" />
             <div className="p-6 hover:bg-pink-700">
               <div className="flex justify-between">
@@ -100,7 +100,7 @@ export default function Project() {
         </div>
 
         <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8">
+          <div className="bg-transparent rounded-md shadow-md m-4 md:m-8">
             <img src={Movie3} alt="movie" className="" />
             <div className="p-6 hover:bg-pink-700">
               <div className="flex justify-between">
@@ -122,7 +122,7 @@ export default function Project() {
         </div>
 
         <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8">
+          <div className="bg-transparent rounded-md shadow-md m-4 md:m-8">
             <img src={Nile} alt="nile" className="" />
             <div className="p-6 hover:bg-pink-700">
               <div className="flex justify-between">
@@ -145,7 +145,7 @@ export default function Project() {
         </div>
 
         <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8">
+          <div className="bg-transparent rounded-md shadow-md m-4 md:m-8">
             <img src={Resturant} alt="resturant" className="" />
             <div className="p-6 hover:bg-pink-700">
               <div className="flex justify-between">
@@ -166,7 +166,7 @@ export default function Project() {
         </div>
 
         <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div className="bg-gradient-to-b from-indigo-700 rounded-md shadow-md m-4 md:m-8">
+          <div className="bg-transparent rounded-md shadow-md m-4 md:m-8">
             <img src={Tenawo} alt="tenawo" className="" />
             <div className="p-6 hover:bg-pink-700">
               <div className="flex justify-between">

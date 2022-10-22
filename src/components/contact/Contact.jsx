@@ -10,7 +10,7 @@ export default function Contact() {
     <div className="pt-10">
       <h2 className="text-4xl text-center font-medium underline">Contact Me</h2>
 
-      <div className="bg-gradient-to-tr from-indigo-700 rounded-md shadow-lg mx-4 mt-4 px-8 py-4 md:max-w-fit md:mx-auto">
+      <div className="bg-transparent rounded-md shadow-lg mx-4 mt-4 px-8 py-4 md:max-w-fit md:mx-auto">
         <div className="flex space-x-3 pb-4 md:justify-center">
           <h3 className="text-xl">Phone:</h3>
           <p className="text-md pt-1">+251932494626</p>
