@@ -18,7 +18,7 @@ export default function Skill() {
     <div className="mt-3">
       <h1 className="text-4xl text-center font-medium underline">Skills</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-        <div className="my-10 mx-auto bg-transparent rounded-md shadow-lg">
+        <div className="my-10 mx-auto bg-gradient-to-bl from-slate-800 to-slate-900 rounded-md shadow-lg">
           <div className="px-3 py-5">
             <h3 className="text-xl text-center font-normal pb-5">Front-end</h3>
 
@@ -53,7 +53,7 @@ export default function Skill() {
           </div>
         </div>
 
-        <div className="my-10 mx-auto bg-transparent rounded-md shadow-lg">
+        <div className="my-10 mx-auto bg-gradient-to-bl from-slate-800 to-slate-900 rounded-md shadow-lg">
           <div className="px-3 py-5">
             <h3 className="text-2xl text-center font-normal pb-5">Backend</h3>
 
@@ -88,7 +88,7 @@ export default function Skill() {
           </div>
         </div>
 
-        <div className="my-10 mx-auto bg-transparent rounded-md shadow-lg">
+        <div className="my-10 mx-auto bg-gradient-to-bl from-slate-800 to-slate-900 rounded-md shadow-lg">
           <div className="px-3 py-5">
             <h3 className="text-2xl text-center font-normal pb-5">Framework</h3>
 
@@ -132,7 +132,7 @@ export default function Skill() {
           </div>
         </div>
 
-        <div className="my-10 mx-auto bg-transparent rounded-md shadow-lg">
+        <div className="my-10 mx-auto bg-gradient-to-bl from-slate-800 to-slate-900 rounded-md shadow-lg">
           <div className="px-3 py-5">
             <h3 className="text-2xl text-center font-normal pb-5">Extra</h3>
 
