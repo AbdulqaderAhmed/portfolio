@@ -44,7 +44,7 @@ export default function Project() {
               <div className="flex justify-between">
                 <h3 className="text-xl font-medium">Let's Chat</h3>
                 <a
-                  href="https://github.com/AbdulqaderAhmed/laravel-chat"
+                  href="https://github.com/AbdulqaderAhmed/laravel-chat-2"
                   target="_blank"
                   className="pt-1"
                 >
