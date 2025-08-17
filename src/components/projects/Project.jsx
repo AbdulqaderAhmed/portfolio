@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import Blog from "../../assets/image/blog.png";
 import Chat from "../../assets/image/chat.png";
 import Ecom from "../../assets/image/e-commerce.png";
@@ -7,193 +7,396 @@ import Movie3 from "../../assets/image/movie3.png";
 import Nile from "../../assets/image/Nile.png";
 import Resturant from "../../assets/image/resturant.png";
 import Tenawo from "../../assets/image/Tenawo.png";
-import { FaLink } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaCode, FaEye } from "react-icons/fa";
+import {
+  SiLaravel,
+  SiReact,
+  SiPhp,
+  SiMysql,
+  SiTailwindcss,
+  SiMui,
+} from "react-icons/si";
+import { useTheme } from "../../contexts/ThemeContext";
 
 export default function Project() {
+  const [filter, setFilter] = useState("all");
+  const [hoveredProject, setHoveredProject] = useState(null);
+  const { colors } = useTheme();
+
+  const projects = [
+    {
+      id: 1,
+      title: "Life Hack Blog",
+      description:
+        "A comprehensive blogging platform built with Laravel framework, featuring user authentication, content management, and responsive design for optimal reading experience.",
+      image: Blog,
+      category: "fullstack",
+      technologies: ["Laravel", "PHP", "MySQL", "Bootstrap"],
+      github: "https://github.com/AbdulqaderAhmed/life-hack-blog",
+      live: null,
+      features: [
+        "User Authentication",
+        "Content Management",
+        "Responsive Design",
+        "SEO Optimized",
+      ],
+    },
+    {
+      id: 2,
+      title: "Let's Chat",
+      description:
+        "Real-time chat application with social media authentication, enabling seamless communication between users with modern UI/UX design.",
+      image: Chat,
+      category: "fullstack",
+      technologies: ["Laravel", "PHP", "WebSocket", "MySQL"],
+      github: "https://github.com/AbdulqaderAhmed/laravel-chat-2",
+      live: null,
+      features: [
+        "Real-time Messaging",
+        "Social Auth",
+        "User Presence",
+        "File Sharing",
+      ],
+    },
+    {
+      id: 3,
+      title: "E-Commerce Platform",
+      description:
+        "Full-featured e-commerce solution with admin dashboard, inventory management, payment integration, and customer portal.",
+      image: Ecom,
+      category: "fullstack",
+      technologies: ["Laravel", "PHP", "MySQL", "Stripe API"],
+      github: "https://github.com/AbdulqaderAhmed/laravel-ecommerce",
+      live: null,
+      features: [
+        "Admin Dashboard",
+        "Payment Gateway",
+        "Inventory Management",
+        "Order Tracking",
+      ],
+    },
+    {
+      id: 4,
+      title: "Employee Management System",
+      description:
+        "Comprehensive HR management system with employee tracking, payroll management, and performance analytics built with Laravel API and React frontend.",
+      image: Employee,
+      category: "fullstack",
+      technologies: ["Laravel", "React", "MySQL", "REST API"],
+      github: "https://github.com/AbdulqaderAhmed/employee-laravel",
+      live: null,
+      features: [
+        "Employee Tracking",
+        "Payroll System",
+        "Performance Analytics",
+        "Role Management",
+      ],
+    },
+    {
+      id: 5,
+      title: "Ocean Of Movies",
+      description:
+        "Entertainment hub for discovering latest movies, TV series, and shows. Built with React and Redux, integrated with TMDB API for real-time data.",
+      image: Movie3,
+      category: "frontend",
+      technologies: ["React", "Redux", "TMDB API", "CSS3"],
+      github: "https://github.com/AbdulqaderAhmed/Ocean-of-movies-react",
+      live: null,
+      features: [
+        "Movie Discovery",
+        "Search & Filter",
+        "Watchlist",
+        "Responsive Design",
+      ],
+    },
+    {
+      id: 6,
+      title: "Nile Insurance System",
+      description:
+        "Car insurance price calculation system with dynamic pricing algorithms, policy management, and customer portal.",
+      image: Nile,
+      category: "fullstack",
+      technologies: ["Laravel", "PHP", "MySQL", "Bootstrap"],
+      github: "https://github.com/AbdulqaderAhmed/nile-insurance-laravel",
+      live: null,
+      features: [
+        "Price Calculator",
+        "Policy Management",
+        "Customer Portal",
+        "Claims Processing",
+      ],
+    },
+    {
+      id: 7,
+      title: "Side-hustle Restaurant",
+      description:
+        "Modern restaurant website with online ordering system, menu management, and reservation booking built with React and Material-UI.",
+      image: Resturant,
+      category: "frontend",
+      technologies: ["React", "Material-UI", "JavaScript", "CSS3"],
+      github: "https://github.com/AbdulqaderAhmed/SideHustle-Restaurant",
+      live: null,
+      features: [
+        "Online Ordering",
+        "Menu Management",
+        "Reservation System",
+        "Mobile Responsive",
+      ],
+    },
+    {
+      id: 8,
+      title: "Tenawo - Location Services",
+      description:
+        "Location-based service finder helping users discover nearby pharmacies and medical services within 500 meters radius using geolocation APIs.",
+      image: Tenawo,
+      category: "frontend",
+      technologies: ["React", "Geolocation API", "Maps API", "Tailwind CSS"],
+      github: "https://github.com/AbdulqaderAhmed/Tenawo",
+      live: null,
+      features: [
+        "Location Services",
+        "Radius Search",
+        "Maps Integration",
+        "Service Directory",
+      ],
+    },
+  ];
+
+  const categories = [
+    { id: "all", name: "All Projects", count: projects.length },
+    {
+      id: "fullstack",
+      name: "Full Stack",
+      count: projects.filter((p) => p.category === "fullstack").length,
+    },
+    {
+      id: "frontend",
+      name: "Frontend",
+      count: projects.filter((p) => p.category === "frontend").length,
+    },
+  ];
+
+  const filteredProjects =
+    filter === "all"
+      ? projects
+      : projects.filter((project) => project.category === filter);
+
+  const getTechIcon = (tech) => {
+    const icons = {
+      Laravel: <SiLaravel className="text-red-500" />,
+      React: <SiReact className="text-blue-400" />,
+      PHP: <SiPhp className="text-purple-500" />,
+      MySQL: <SiMysql className="text-blue-600" />,
+      "Tailwind CSS": <SiTailwindcss className="text-teal-400" />,
+      "Material-UI": <SiMui className="text-blue-500" />,
+    };
+    return icons[tech] || <FaCode className="text-gray-400" />;
+  };
+
   return (
-    <div className="pt-10">
-      <h1 className="text-4xl text-center font-medium underline">Portfolio</h1>
+    <section id="projects" className="py-12 px-4">
+      <div className="max-w-7xl mx-auto">
+        {/* Section Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4">
+            <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+              Featured Projects
+            </span>
+          </h2>
+          <p
+            className={`text-xl ${colors.textSecondary} max-w-3xl mx-auto leading-relaxed`}
+          >
+            A showcase of my recent work, demonstrating expertise in full-stack
+            development, modern frameworks, and user-centered design principles.
+          </p>
+        </div>
 
-      <div className="grid  md:grid-cols-2 lg:grid-cols-3">
-        <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div className="bg-transparent rounded-md shadow-md m-4 md:m-8">
-            <img src={Blog} alt="blog" className="" />
-            <div className="p-6 hover:bg-pink-700">
-              <div className="flex justify-between">
-                <h3 className="text-xl font-medium">Blog</h3>
-                <a
-                  href="https://github.com/AbdulqaderAhmed/life-hack-blog"
-                  target="_blank"
-                  className="pt-1"
+        {/* Category Filter */}
+        <div className="flex flex-wrap justify-center gap-4 mb-8">
+          {categories.map((category) => (
+            <button
+              key={category.id}
+              onClick={() => setFilter(category.id)}
+              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 ${
+                filter === category.id
+                  ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg"
+                  : `${colors.card} ${colors.textSecondary} ${colors.cardHover} hover:text-white`
+              }`}
+            >
+              {category.name}
+              <span className="ml-2 text-sm opacity-75">
+                ({category.count})
+              </span>
+            </button>
+          ))}
+        </div>
+
+        {/* Projects Showcase - Vertically Stacked */}
+        <div className="relative w-full">
+          <div className="flex flex-col space-y-6">
+            {filteredProjects.map((project, index) => (
+              <div
+                key={project.id}
+                className="relative group w-full"
+                onMouseEnter={() => setHoveredProject(project.id)}
+                onMouseLeave={() => setHoveredProject(null)}
+                style={{
+                  zIndex: filteredProjects.length - index,
+                  transform: `translateY(${index * -20}px)`,
+                  animationDelay: `${index * 0.1}s`,
+                }}
+              >
+                {/* Project Title Card - Full Width */}
+                <div
+                  className={`relative w-full ${colors.card} border ${colors.border} rounded-2xl p-6 lg:p-8 backdrop-blur-sm bg-opacity-90 hover:bg-opacity-100 transition-all duration-500 transform hover:scale-[1.02] hover:shadow-2xl hover:border-blue-500 cursor-pointer`}
                 >
-                  <FaLink className="cursor-pointer" />
-                </a>
+                  <div className="flex items-center justify-between w-full">
+                    <div className="flex-1">
+                      <h3
+                        className={`text-2xl lg:text-3xl font-bold ${colors.textPrimary} group-hover:text-blue-400 transition-colors duration-300`}
+                      >
+                        {project.title}
+                      </h3>
+                      <p
+                        className={`${colors.textSecondary} mt-2 text-sm lg:text-base opacity-80`}
+                      >
+                        {project.category === "fullstack"
+                          ? "Full Stack Development"
+                          : "Frontend Development"}
+                      </p>
+
+                      {/* Technologies Preview */}
+                      <div className="flex flex-wrap gap-2 mt-4">
+                        {project.technologies.slice(0, 4).map((tech) => (
+                          <span
+                            key={tech}
+                            className={`inline-flex items-center gap-1 px-3 py-1 ${colors.tertiary} text-xs font-medium rounded-full ${colors.textSecondary}`}
+                          >
+                            {getTechIcon(tech)}
+                            {tech}
+                          </span>
+                        ))}
+                        {project.technologies.length > 4 && (
+                          <span
+                            className={`px-3 py-1 ${colors.tertiary} text-xs font-medium rounded-full ${colors.textMuted}`}
+                          >
+                            +{project.technologies.length - 4} more
+                          </span>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Action Buttons */}
+                    <div className="flex gap-3 ml-6">
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`p-3 ${colors.card} border ${colors.border} hover:border-blue-500 rounded-full ${colors.textSecondary} hover:text-blue-400 transition-all duration-300 transform hover:scale-110`}
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <FaGithub size={20} />
+                      </a>
+                      {project.live && (
+                        <a
+                          href={project.live}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="p-3 bg-blue-600 hover:bg-blue-500 rounded-full text-white transition-all duration-300 transform hover:scale-110"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <FaExternalLinkAlt size={20} />
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Tooltip - Image Only - Positioned Over Title */}
+                <div
+                  className={`absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-full mb-4 w-64 lg:w-80 transition-all duration-500 ${
+                    hoveredProject === project.id
+                      ? "opacity-100 scale-100 pointer-events-auto"
+                      : "opacity-0 scale-95 pointer-events-none"
+                  } z-50`}
+                >
+                  <div
+                    className={`${colors.card} border ${colors.border} rounded-xl overflow-hidden shadow-2xl backdrop-blur-sm bg-opacity-95`}
+                  >
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-40 lg:h-48 object-cover"
+                    />
+                  </div>
+
+                  {/* Tooltip Arrow */}
+                  <div
+                    className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-2 w-4 h-4 ${colors.card} border-r ${colors.border} border-b rotate-45`}
+                  ></div>
+                </div>
+
+                {/* Project Description - Below Title Card */}
+                <div className="mt-4 px-4">
+                  <p
+                    className={`${colors.textSecondary} text-base lg:text-lg leading-relaxed mb-4`}
+                  >
+                    {project.description}
+                  </p>
+
+                  {/* All Technologies */}
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.technologies.map((tech) => (
+                      <span
+                        key={tech}
+                        className={`inline-flex items-center gap-1 px-3 py-1 ${colors.tertiary} text-sm font-medium rounded-full ${colors.textSecondary}`}
+                      >
+                        {getTechIcon(tech)}
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Key Features */}
+                  <div>
+                    <h5
+                      className={`text-sm font-semibold ${colors.textMuted} mb-3`}
+                    >
+                      Key Features:
+                    </h5>
+                    <ul
+                      className={`text-sm ${colors.textMuted} space-y-2 grid grid-cols-1 md:grid-cols-2 gap-2`}
+                    >
+                      {project.features.map((feature, idx) => (
+                        <li key={idx} className="flex items-center gap-2">
+                          <div className="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0"></div>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <p className="text-gray-300 text-sm py-5">
-                This project is done by laravel framework and helps people to
-                read blogs.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
 
-        <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div className="bg-transparent rounded-md shadow-md m-4 md:m-8">
-            <img src={Chat} alt="chat" className="" />
-            <div className="p-6 hover:bg-pink-700">
-              <div className="flex justify-between">
-                <h3 className="text-xl font-medium">Let's Chat</h3>
-                <a
-                  href="https://github.com/AbdulqaderAhmed/laravel-chat-2"
-                  target="_blank"
-                  className="pt-1"
-                >
-                  <FaLink className="cursor-pointer" />
-                </a>
-              </div>
-              <p className="text-gray-300 text-sm py-5">
-                Helps freinds to chat each other, built using laravel and
-                authenticate using social medias.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div className="bg-transparent rounded-md shadow-md m-4 md:m-8">
-            <img src={Ecom} alt="ecommerce" className="" />
-            <div className="p-6 hover:bg-pink-700">
-              <div className="flex justify-between">
-                <h3 className="text-xl font-medium">E-commerce</h3>
-                <a
-                  href="https://github.com/AbdulqaderAhmed/laravel-ecommerce"
-                  target="_blank"
-                  className="pt-1"
-                >
-                  <FaLink className="cursor-pointer" />
-                </a>
-              </div>
-              <p className="text-gray-300 text-sm py-5">
-                E-commerce dashboard used to manage e-commerce for admins and
-                buying for customers. built using Laravel framework.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div className="bg-transparent rounded-md shadow-md m-4 md:m-8">
-            <img src={Employee} alt="employee" className="" />
-            <div className="p-6 hover:bg-pink-700">
-              <div className="flex justify-between">
-                <h3 className="text-xl font-medium">Employee Management</h3>
-                <a
-                  href="https://github.com/AbdulqaderAhmed/employee-laravel"
-                  target="_blank"
-                  className="pt-1"
-                >
-                  <FaLink className="cursor-pointer" />
-                </a>
-              </div>
-              <p className="text-gray-300 text-sm py-5">
-                Helps a company to manage their company's employee. Built using
-                laravel API with React Js.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div className="bg-transparent rounded-md shadow-md m-4 md:m-8">
-            <img src={Movie3} alt="movie" className="" />
-            <div className="p-6 hover:bg-pink-700">
-              <div className="flex justify-between">
-                <h3 className="text-xl font-medium">Ocean Of Movies</h3>
-                <a
-                  href="https://github.com/AbdulqaderAhmed/Ocean-of-movies-react"
-                  target="_blank"
-                  className="pt-1"
-                >
-                  <FaLink className="cursor-pointer" />
-                </a>
-              </div>
-              <p className="text-gray-300 text-sm py-5">
-                Entertainment hub, which is used to get latest movies, series,
-                tv shows in one place. Built using TMDB api with React JS and
-                react-redux.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div className="bg-transparent rounded-md shadow-md m-4 md:m-8">
-            <img src={Nile} alt="nile" className="" />
-            <div className="p-6 hover:bg-pink-700">
-              <div className="flex justify-between">
-                <h3 className="text-xl font-medium">
-                  Nile Insurance Car Price System
-                </h3>
-                <a
-                  href="https://github.com/AbdulqaderAhmed/nile-insurance-laravel"
-                  target="_blank"
-                  className="pt-1"
-                >
-                  <FaLink className="cursor-pointer" />
-                </a>
-              </div>
-              <p className="text-gray-300 text-sm py-5">
-                Nile insurance Car price indication system. built using laravel
-                framework.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div className="bg-transparent rounded-md shadow-md m-4 md:m-8">
-            <img src={Resturant} alt="resturant" className="" />
-            <div className="p-6 hover:bg-pink-700">
-              <div className="flex justify-between">
-                <h3 className="text-xl font-medium">Side-hustle Resturant</h3>
-                <a
-                  href="https://github.com/AbdulqaderAhmed/SideHustle-Restaurant"
-                  target="_blank"
-                  className="pt-1"
-                >
-                  <FaLink className="cursor-pointer" />
-                </a>
-              </div>
-              <p className="text-gray-300 text-sm py-5">
-                Side-hustle project which is built using React Js with Material
-                UI.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="hover:scale-105 md:hover:scale-110 ease-linear duration-500">
-          <div className="bg-transparent rounded-md shadow-md m-4 md:m-8">
-            <img src={Tenawo} alt="tenawo" className="" />
-            <div className="p-6 hover:bg-pink-700">
-              <div className="flex justify-between">
-                <h3 className="text-xl font-medium">Tenawo</h3>
-                <a
-                  href="https://github.com/AbdulqaderAhmed/Tenawo"
-                  target="_blank"
-                  className="pt-1"
-                >
-                  <FaLink className="cursor-pointer" />
-                </a>
-              </div>
-              <p className="text-gray-300 text-sm py-5">
-                Helps save your time, client's find drugs and services within
-                500 meters radius, built with react js.
-              </p>
-            </div>
-          </div>
+        {/* Call to Action */}
+        <div className="text-center mt-12">
+          <p className={`${colors.textSecondary} mb-6`}>
+            Interested in seeing more of my work?
+          </p>
+          <a
+            href="https://github.com/AbdulqaderAhmed"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+          >
+            <FaGithub size={20} />
+            View All Projects on GitHub
+          </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

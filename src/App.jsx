@@ -6,23 +6,51 @@ import Project from "./components/projects/Project";
 import Skill from "./components/skills/Skill";
 import Header from "./include/header/Header";
 import Footer from "./include/footer/Footer";
-export default function App() {
-  return (
-    <div className="bg-slate-900 min-h-screen min-w-full text-white font-mono overflow-hidden">
-      <header>
-        <Header />
-      </header>
+import { ThemeProvider, useTheme } from "./contexts/ThemeContext";
 
-      <main className="px-4">
-        <About />
-        <Skill />
-        <Project />
-        <Contact />
+function AppContent() {
+  const { colors } = useTheme();
+
+  return (
+    <div
+      className={`${colors.primary} min-h-screen ${colors.textPrimary} remove_space transition-colors duration-300`}
+    >
+      {/* Header */}
+      <Header />
+
+      {/* Main Content */}
+      <main>
+        {/* Hero Section */}
+        <section id="home" className="min-h-screen">
+          <About />
+        </section>
+
+        {/* Projects Section */}
+        <section id="projects" className="section-padding">
+          <Project />
+        </section>
+
+        {/* Skills Section */}
+        <section id="skills" className="section-padding">
+          <Skill />
+        </section>
+
+        {/* Contact Section */}
+        <section id="contact" className="section-padding">
+          <Contact />
+        </section>
       </main>
 
-      <footer>
-        <Footer />
-      </footer>
+      {/* Footer */}
+      <Footer />
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <ThemeProvider>
+      <AppContent />
+    </ThemeProvider>
   );
 }
