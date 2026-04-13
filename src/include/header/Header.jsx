@@ -1,14 +1,27 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { BsFillMoonStarsFill, BsSunFill } from "react-icons/bs";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 import { FaSun, FaMoon } from "react-icons/fa";
 import CV from "../../assets/file/resume.pdf";
 import { useTheme } from "../../contexts/ThemeContext";
+import { gsap } from "gsap";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { isDark, toggleTheme, colors } = useTheme();
+  const navRef = useRef(null);
+
+  // Entrance animation
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(navRef.current, { y: -60, opacity: 0, duration: 0.8, ease: "power3.out" });
+      gsap.from(".nav-logo", { x: -30, opacity: 0, duration: 0.7, ease: "power2.out", delay: 0.3 });
+      gsap.from(".nav-item", { y: -20, opacity: 0, stagger: 0.08, duration: 0.5, ease: "power2.out", delay: 0.4 });
+      gsap.from(".nav-actions", { x: 30, opacity: 0, duration: 0.7, ease: "power2.out", delay: 0.5 });
+    }, navRef);
+    return () => ctx.revert();
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,6 +49,7 @@ export default function Header() {
 
   return (
     <nav
+      ref={navRef}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? `${colors.card}/95 backdrop-blur-md shadow-lg ${colors.border} border-b`
@@ -45,7 +59,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="nav-logo flex-shrink-0">
             <h1
               className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent cursor-pointer hover:scale-105 transition-transform duration-300"
               onClick={() => scrollToSection("#home")}
@@ -61,7 +75,7 @@ export default function Header() {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className={`${colors.textSecondary} hover:${colors.textPrimary} px-3 py-2 text-sm font-medium transition-colors duration-300 relative group`}
+                  className={`nav-item ${colors.textSecondary} hover:${colors.textPrimary} px-3 py-2 text-sm font-medium transition-colors duration-300 relative group`}
                 >
                   {item.name}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-500 group-hover:w-full transition-all duration-300"></span>
@@ -71,7 +85,7 @@ export default function Header() {
           </div>
 
           {/* Right side buttons */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="nav-actions hidden md:flex items-center space-x-4">
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}

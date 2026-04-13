@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -8,10 +8,29 @@ import {
 } from "react-icons/ai";
 import { FaArrowUp } from "react-icons/fa";
 import { useTheme } from "../../contexts/ThemeContext";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const { colors } = useTheme();
+  const footerRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(".footer-col", {
+        y: 40,
+        opacity: 0,
+        stagger: 0.15,
+        duration: 0.7,
+        ease: "power2.out",
+        scrollTrigger: { trigger: footerRef.current, start: "top 90%" },
+      });
+    }, footerRef);
+    return () => ctx.revert();
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -56,11 +75,11 @@ export default function Footer() {
   };
 
   return (
-    <footer className={`${colors.secondary} border-t ${colors.border}`}>
+    <footer ref={footerRef} className={`${colors.secondary} border-t ${colors.border}`}>
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Section */}
-          <div className="md:col-span-2">
+          <div className="footer-col md:col-span-2">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-4">
               Abdulqader Ahmed
             </h3>
@@ -88,7 +107,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="footer-col">
             <h4 className={`text-lg font-semibold ${colors.textPrimary} mb-4`}>
               Quick Links
             </h4>
@@ -107,7 +126,7 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="footer-col">
             <h4 className={`text-lg font-semibold ${colors.textPrimary} mb-4`}>
               Get In Touch
             </h4>

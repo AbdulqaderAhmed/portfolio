@@ -5,6 +5,7 @@
 /* Global Styles */
 * {
   scroll-behavior: smooth;
+  cursor: none !important;
 }
 
 body {

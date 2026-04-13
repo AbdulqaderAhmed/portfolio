@@ -7,6 +7,9 @@ import Skill from "./components/skills/Skill";
 import Header from "./include/header/Header";
 import Footer from "./include/footer/Footer";
 import { ThemeProvider, useTheme } from "./contexts/ThemeContext";
+import ParticleBackground from "./components/effects/ParticleBackground";
+import CustomCursor from "./components/effects/CustomCursor";
+import ClickBurst from "./components/effects/ClickBurst";
 
 function AppContent() {
   const { colors } = useTheme();
@@ -15,11 +18,16 @@ function AppContent() {
     <div
       className={`${colors.primary} min-h-screen ${colors.textPrimary} remove_space transition-colors duration-300`}
     >
+      {/* Global effects */}
+      <ParticleBackground />
+      <CustomCursor />
+      <ClickBurst />
+
       {/* Header */}
       <Header />
 
       {/* Main Content */}
-      <main>
+      <main className="relative z-10">
         {/* Hero Section */}
         <section id="home" className="min-h-screen">
           <About />
