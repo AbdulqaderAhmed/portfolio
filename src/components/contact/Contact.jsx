@@ -56,7 +56,7 @@ export default function Contact() {
   const contactInfo = [
     { icon: <AiOutlineMail className="text-green-400" size={24} />, title: "Professional Email", value: "abdulqaderahmed32@gmail.com", link: "mailto:abdulqaderahmed32@gmail.com", description: "Quick response guaranteed within 24 hours" },
     { icon: <AiOutlinePhone className="text-blue-400" size={24} />, title: "Direct Line", value: "+251932494626", link: "tel:+251932494626", description: "Available for consultations Mon-Fri, 9AM-6PM EAT" },
-    { icon: <AiOutlineEnvironment className="text-purple-400" size={24} />, title: "Base Location", value: "Addis Ababa, Ethiopia", link: null, description: "Remote-first • Global collaboration ready" },
+    { icon: <AiOutlineEnvironment className="text-teal-400" size={24} />, title: "Base Location", value: "Addis Ababa, Ethiopia", link: null, description: "Remote-first • Global collaboration ready" },
   ];
 
   const socialLinks = [
@@ -66,12 +66,12 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" ref={sectionRef} className="py-12 px-4">
+    <section id="contact" ref={sectionRef} className="py-12 px-4" aria-labelledby="contact-heading">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="contact-header text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+          <h2 id="contact-heading" className="text-4xl lg:text-5xl font-bold mb-4">
+            <span className="bg-gradient-to-r from-blue-400 via-emerald-500 to-teal-500 bg-clip-text text-transparent">
               Let's Build Something Exceptional
             </span>
           </h2>
@@ -96,25 +96,31 @@ export default function Contact() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="relative">
-                  <FaUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={16} />
-                  <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Full Name *" required
+                  <label htmlFor="name" className="sr-only">Full Name</label>
+                  <FaUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={16} aria-hidden="true" />
+                  <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Full Name *" required
                     className={`w-full pl-10 pr-4 py-3 ${colors.tertiary} border ${colors.border} rounded-lg ${colors.textPrimary} placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300`} />
                 </div>
                 <div className="relative">
-                  <FaEnvelope className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={16} />
-                  <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Professional Email *" required
+                  <label htmlFor="email" className="sr-only">Professional Email</label>
+                  <FaEnvelope className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={16} aria-hidden="true" />
+                  <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} placeholder="Professional Email *" required
                     className={`w-full pl-10 pr-4 py-3 ${colors.tertiary} border ${colors.border} rounded-lg ${colors.textPrimary} placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300`} />
                 </div>
               </div>
-              <input type="text" name="subject" value={formData.subject} onChange={handleChange} placeholder="Project Type or Inquiry Subject *" required
-                className={`w-full px-4 py-3 ${colors.tertiary} border ${colors.border} rounded-lg ${colors.textPrimary} placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300`} />
               <div className="relative">
-                <FaComment className="absolute left-3 top-4 text-gray-400" size={16} />
-                <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Tell me about your project, timeline, and specific requirements..." rows={6} required
+                <label htmlFor="subject" className="sr-only">Subject</label>
+                <input type="text" id="subject" name="subject" value={formData.subject} onChange={handleChange} placeholder="Project Type or Inquiry Subject *" required
+                  className={`w-full px-4 py-3 ${colors.tertiary} border ${colors.border} rounded-lg ${colors.textPrimary} placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300`} />
+              </div>
+              <div className="relative">
+                <label htmlFor="message" className="sr-only">Message</label>
+                <FaComment className="absolute left-3 top-4 text-gray-400" size={16} aria-hidden="true" />
+                <textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Tell me about your project, timeline, and specific requirements..." rows={6} required
                   className={`w-full pl-10 pr-4 py-3 ${colors.tertiary} border ${colors.border} rounded-lg ${colors.textPrimary} placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300 resize-none`}></textarea>
               </div>
               <button type="submit" disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 disabled:from-gray-600 disabled:to-gray-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 disabled:scale-100 shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
+                className="w-full bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 disabled:from-gray-600 disabled:to-gray-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 disabled:scale-100 shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
                 {isSubmitting ? (
                   <><div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>Sending...</>
                 ) : (
@@ -173,7 +179,7 @@ export default function Contact() {
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-green-500/20 text-green-400 text-xs rounded-full font-medium">Remote Ready</span>
                 <span className="px-3 py-1 bg-blue-500/20 text-blue-400 text-xs rounded-full font-medium">Full-time</span>
-                <span className="px-3 py-1 bg-purple-500/20 text-purple-400 text-xs rounded-full font-medium">Contract</span>
+                <span className="px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs rounded-full font-medium">Contract</span>
               </div>
             </div>
           </div>

@@ -41,7 +41,7 @@ export default function About() {
               <p className={`hero-greeting text-lg font-medium ${colors.textMuted} tracking-widest uppercase`}>
                 Welcome to my portfolio
               </p>
-              <h1 className="hero-name text-5xl lg:text-7xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent leading-tight">
+              <h1 className="hero-name text-5xl lg:text-7xl font-bold bg-gradient-to-r from-blue-400 via-emerald-500 to-teal-500 bg-clip-text text-transparent leading-tight">
                 Hi, I'm <span className="block">Abdulqader</span>
               </h1>
 
@@ -88,7 +88,7 @@ export default function About() {
               <a
                 href={CV}
                 download
-                className="hero-cta inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                className="hero-cta inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 <FaDownload className="mr-2" />
                 Download Resume
@@ -134,8 +134,8 @@ export default function About() {
           {/* Image */}
           <div className="hero-image flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full blur-2xl opacity-20 animate-pulse"></div>
-              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-80 h-40 lg:w-96 lg:h-48 bg-gradient-to-t from-blue-400/30 via-purple-400/20 to-transparent rounded-full blur-xl opacity-60"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-emerald-600 rounded-full blur-2xl opacity-20 animate-pulse"></div>
+              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-80 h-40 lg:w-96 lg:h-48 bg-gradient-to-t from-blue-400/30 via-emerald-400/20 to-transparent rounded-full blur-xl opacity-60"></div>
               <img
                 src={Abdu}
                 alt="Abdulqader Ahmed"

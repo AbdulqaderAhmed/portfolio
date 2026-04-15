@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { useTheme } from "../../contexts/ThemeContext";
 
 const PARTICLE_COUNT = 72;
-const COLORS = ["#3b82f6", "#8b5cf6", "#ec4899", "#06b6d4", "#a78bfa", "#f472b6"];
+const COLORS = ["#3b82f6", "#10b981", "#14b8a6", "#06b6d4", "#34d399", "#f472b6"];
 
 function randomBetween(a, b) {
   return a + Math.random() * (b - a);
@@ -108,7 +108,7 @@ export default function ParticleBackground() {
             ctx.moveTo(a.x, a.y);
             ctx.lineTo(b.x, b.y);
             ctx.strokeStyle = isDark
-              ? `rgba(139,92,246,${opacity})`
+              ? `rgba(16,185,129,${opacity})`
               : `rgba(59,130,246,${opacity})`;
             ctx.lineWidth = 0.8;
             ctx.stroke();

@@ -9,6 +9,7 @@ import Footer from "./include/footer/Footer";
 import { ThemeProvider, useTheme } from "./contexts/ThemeContext";
 import WaterBackground from "./components/effects/WaterBackground";
 import UnderwaterFun from "./components/effects/UnderwaterFun";
+import MouseFish from "./components/effects/MouseFish";
 import CustomCursor from "./components/effects/CustomCursor";
 import ClickBurst from "./components/effects/ClickBurst";
 
@@ -22,6 +23,7 @@ function AppContent() {
       {/* Global effects */}
       <WaterBackground />
       <UnderwaterFun />
+      <MouseFish />
       <CustomCursor />
       <ClickBurst />
 

@@ -61,7 +61,7 @@ export default function Header() {
           {/* Logo */}
           <div className="nav-logo flex-shrink-0">
             <h1
-              className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent cursor-pointer hover:scale-105 transition-transform duration-300"
+              className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-emerald-500 bg-clip-text text-transparent cursor-pointer hover:scale-105 transition-transform duration-300"
               onClick={() => scrollToSection("#home")}
             >
               Abdulqader
@@ -78,7 +78,7 @@ export default function Header() {
                   className={`nav-item ${colors.textSecondary} hover:${colors.textPrimary} px-3 py-2 text-sm font-medium transition-colors duration-300 relative group`}
                 >
                   {item.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-500 group-hover:w-full transition-all duration-300"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-emerald-500 group-hover:w-full transition-all duration-300"></span>
                 </button>
               ))}
             </div>
@@ -100,7 +100,7 @@ export default function Header() {
             <a
               href={CV}
               download="Abdulqader_Ahmed_Resume.pdf"
-              className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+              className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               Resume
             </a>
@@ -148,7 +148,7 @@ export default function Header() {
               <a
                 href={CV}
                 download="Abdulqader_Ahmed_Resume.pdf"
-                className="block w-full text-center px-3 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-lg transition-all duration-300"
+                className="block w-full text-center px-3 py-2 bg-gradient-to-r from-blue-600 to-emerald-600 text-white font-medium rounded-lg transition-all duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Download Resume
