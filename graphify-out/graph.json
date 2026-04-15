@@ -1,0 +1,652 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "vite.config.js",
+      "file_type": "code",
+      "source_file": "vite.config.js",
+      "source_location": "L1",
+      "id": "vite_config_js",
+      "community": 11,
+      "norm_label": "vite.config.js"
+    },
+    {
+      "label": "App.jsx",
+      "file_type": "code",
+      "source_file": "src\\App.jsx",
+      "source_location": "L1",
+      "id": "src_app_jsx",
+      "community": 2,
+      "norm_label": "app.jsx"
+    },
+    {
+      "label": "AppContent()",
+      "file_type": "code",
+      "source_file": "src\\App.jsx",
+      "source_location": "L14",
+      "id": "app_appcontent",
+      "community": 2,
+      "norm_label": "appcontent()"
+    },
+    {
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "src\\App.jsx",
+      "source_location": "L58",
+      "id": "app_app",
+      "community": 2,
+      "norm_label": "app()"
+    },
+    {
+      "label": "main.jsx",
+      "file_type": "code",
+      "source_file": "src\\main.jsx",
+      "source_location": "L1",
+      "id": "src_main_jsx",
+      "community": 12,
+      "norm_label": "main.jsx"
+    },
+    {
+      "label": "About.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\about\\About.jsx",
+      "source_location": "L1",
+      "id": "src_components_about_about_jsx",
+      "community": 0,
+      "norm_label": "about.jsx"
+    },
+    {
+      "label": "About()",
+      "file_type": "code",
+      "source_file": "src\\components\\about\\About.jsx",
+      "source_location": "L9",
+      "id": "about_about",
+      "community": 0,
+      "norm_label": "about()"
+    },
+    {
+      "label": "Contact.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\contact\\Contact.jsx",
+      "source_location": "L1",
+      "id": "src_components_contact_contact_jsx",
+      "community": 4,
+      "norm_label": "contact.jsx"
+    },
+    {
+      "label": "Contact()",
+      "file_type": "code",
+      "source_file": "src\\components\\contact\\Contact.jsx",
+      "source_location": "L14",
+      "id": "contact_contact",
+      "community": 4,
+      "norm_label": "contact()"
+    },
+    {
+      "label": "ClickBurst.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\effects\\ClickBurst.jsx",
+      "source_location": "L1",
+      "id": "src_components_effects_clickburst_jsx",
+      "community": 5,
+      "norm_label": "clickburst.jsx"
+    },
+    {
+      "label": "ClickBurst()",
+      "file_type": "code",
+      "source_file": "src\\components\\effects\\ClickBurst.jsx",
+      "source_location": "L6",
+      "id": "clickburst_clickburst",
+      "community": 5,
+      "norm_label": "clickburst()"
+    },
+    {
+      "label": "CustomCursor.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\effects\\CustomCursor.jsx",
+      "source_location": "L1",
+      "id": "src_components_effects_customcursor_jsx",
+      "community": 6,
+      "norm_label": "customcursor.jsx"
+    },
+    {
+      "label": "CustomCursor()",
+      "file_type": "code",
+      "source_file": "src\\components\\effects\\CustomCursor.jsx",
+      "source_location": "L10",
+      "id": "customcursor_customcursor",
+      "community": 6,
+      "norm_label": "customcursor()"
+    },
+    {
+      "label": "ParticleBackground.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\effects\\ParticleBackground.jsx",
+      "source_location": "L1",
+      "id": "src_components_effects_particlebackground_jsx",
+      "community": 3,
+      "norm_label": "particlebackground.jsx"
+    },
+    {
+      "label": "randomBetween()",
+      "file_type": "code",
+      "source_file": "src\\components\\effects\\ParticleBackground.jsx",
+      "source_location": "L7",
+      "id": "particlebackground_randombetween",
+      "community": 3,
+      "norm_label": "randombetween()"
+    },
+    {
+      "label": "ParticleBackground()",
+      "file_type": "code",
+      "source_file": "src\\components\\effects\\ParticleBackground.jsx",
+      "source_location": "L11",
+      "id": "particlebackground_particlebackground",
+      "community": 3,
+      "norm_label": "particlebackground()"
+    },
+    {
+      "label": "WaterBackground.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\effects\\WaterBackground.jsx",
+      "source_location": "L1",
+      "id": "src_components_effects_waterbackground_jsx",
+      "community": 7,
+      "norm_label": "waterbackground.jsx"
+    },
+    {
+      "label": "WaterBackground()",
+      "file_type": "code",
+      "source_file": "src\\components\\effects\\WaterBackground.jsx",
+      "source_location": "L7",
+      "id": "waterbackground_waterbackground",
+      "community": 7,
+      "norm_label": "waterbackground()"
+    },
+    {
+      "label": "Project.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\projects\\Project.jsx",
+      "source_location": "L1",
+      "id": "src_components_projects_project_jsx",
+      "community": 0,
+      "norm_label": "project.jsx"
+    },
+    {
+      "label": "Project()",
+      "file_type": "code",
+      "source_file": "src\\components\\projects\\Project.jsx",
+      "source_location": "L18",
+      "id": "project_project",
+      "community": 0,
+      "norm_label": "project()"
+    },
+    {
+      "label": "Skill.jsx",
+      "file_type": "code",
+      "source_file": "src\\components\\skills\\Skill.jsx",
+      "source_location": "L1",
+      "id": "src_components_skills_skill_jsx",
+      "community": 8,
+      "norm_label": "skill.jsx"
+    },
+    {
+      "label": "Skill()",
+      "file_type": "code",
+      "source_file": "src\\components\\skills\\Skill.jsx",
+      "source_location": "L21",
+      "id": "skill_skill",
+      "community": 8,
+      "norm_label": "skill()"
+    },
+    {
+      "label": "ThemeContext.jsx",
+      "file_type": "code",
+      "source_file": "src\\contexts\\ThemeContext.jsx",
+      "source_location": "L1",
+      "id": "src_contexts_themecontext_jsx",
+      "community": 0,
+      "norm_label": "themecontext.jsx"
+    },
+    {
+      "label": "useTheme()",
+      "file_type": "code",
+      "source_file": "src\\contexts\\ThemeContext.jsx",
+      "source_location": "L5",
+      "id": "themecontext_usetheme",
+      "community": 0,
+      "norm_label": "usetheme()"
+    },
+    {
+      "label": "ThemeProvider()",
+      "file_type": "code",
+      "source_file": "src\\contexts\\ThemeContext.jsx",
+      "source_location": "L13",
+      "id": "themecontext_themeprovider",
+      "community": 0,
+      "norm_label": "themeprovider()"
+    },
+    {
+      "label": "useGsapAnimations.js",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useGsapAnimations.js",
+      "source_location": "L1",
+      "id": "src_hooks_usegsapanimations_js",
+      "community": 1,
+      "norm_label": "usegsapanimations.js"
+    },
+    {
+      "label": "useFadeInUp()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useGsapAnimations.js",
+      "source_location": "L10",
+      "id": "usegsapanimations_usefadeinup",
+      "community": 1,
+      "norm_label": "usefadeinup()"
+    },
+    {
+      "label": "useStaggerReveal()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useGsapAnimations.js",
+      "source_location": "L36",
+      "id": "usegsapanimations_usestaggerreveal",
+      "community": 1,
+      "norm_label": "usestaggerreveal()"
+    },
+    {
+      "label": "useSlideIn()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useGsapAnimations.js",
+      "source_location": "L62",
+      "id": "usegsapanimations_useslidein",
+      "community": 1,
+      "norm_label": "useslidein()"
+    },
+    {
+      "label": "useCountUp()",
+      "file_type": "code",
+      "source_file": "src\\hooks\\useGsapAnimations.js",
+      "source_location": "L87",
+      "id": "usegsapanimations_usecountup",
+      "community": 1,
+      "norm_label": "usecountup()"
+    },
+    {
+      "label": "Footer.jsx",
+      "file_type": "code",
+      "source_file": "src\\include\\footer\\Footer.jsx",
+      "source_location": "L1",
+      "id": "src_include_footer_footer_jsx",
+      "community": 9,
+      "norm_label": "footer.jsx"
+    },
+    {
+      "label": "Footer()",
+      "file_type": "code",
+      "source_file": "src\\include\\footer\\Footer.jsx",
+      "source_location": "L16",
+      "id": "footer_footer",
+      "community": 9,
+      "norm_label": "footer()"
+    },
+    {
+      "label": "Header.jsx",
+      "file_type": "code",
+      "source_file": "src\\include\\header\\Header.jsx",
+      "source_location": "L1",
+      "id": "src_include_header_header_jsx",
+      "community": 10,
+      "norm_label": "header.jsx"
+    },
+    {
+      "label": "Header()",
+      "file_type": "code",
+      "source_file": "src\\include\\header\\Header.jsx",
+      "source_location": "L9",
+      "id": "header_header",
+      "community": 10,
+      "norm_label": "header()"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\App.jsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_src": "src_app_jsx",
+      "_tgt": "app_appcontent",
+      "source": "src_app_jsx",
+      "target": "app_appcontent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\App.jsx",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_src": "src_app_jsx",
+      "_tgt": "app_app",
+      "source": "src_app_jsx",
+      "target": "app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\App.jsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_src": "app_appcontent",
+      "_tgt": "themecontext_usetheme",
+      "source": "app_appcontent",
+      "target": "themecontext_usetheme"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\about\\About.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_src": "src_components_about_about_jsx",
+      "_tgt": "about_about",
+      "source": "src_components_about_about_jsx",
+      "target": "about_about",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\components\\about\\About.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_src": "about_about",
+      "_tgt": "themecontext_usetheme",
+      "source": "about_about",
+      "target": "themecontext_usetheme"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\contact\\Contact.jsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_src": "src_components_contact_contact_jsx",
+      "_tgt": "contact_contact",
+      "source": "src_components_contact_contact_jsx",
+      "target": "contact_contact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\components\\contact\\Contact.jsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_src": "contact_contact",
+      "_tgt": "themecontext_usetheme",
+      "source": "contact_contact",
+      "target": "themecontext_usetheme"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\effects\\ClickBurst.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_src": "src_components_effects_clickburst_jsx",
+      "_tgt": "clickburst_clickburst",
+      "source": "src_components_effects_clickburst_jsx",
+      "target": "clickburst_clickburst",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\effects\\CustomCursor.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_src": "src_components_effects_customcursor_jsx",
+      "_tgt": "customcursor_customcursor",
+      "source": "src_components_effects_customcursor_jsx",
+      "target": "customcursor_customcursor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\effects\\ParticleBackground.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_src": "src_components_effects_particlebackground_jsx",
+      "_tgt": "particlebackground_randombetween",
+      "source": "src_components_effects_particlebackground_jsx",
+      "target": "particlebackground_randombetween",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\effects\\ParticleBackground.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_src": "src_components_effects_particlebackground_jsx",
+      "_tgt": "particlebackground_particlebackground",
+      "source": "src_components_effects_particlebackground_jsx",
+      "target": "particlebackground_particlebackground",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\components\\effects\\ParticleBackground.jsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_src": "particlebackground_particlebackground",
+      "_tgt": "themecontext_usetheme",
+      "source": "particlebackground_particlebackground",
+      "target": "themecontext_usetheme"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\effects\\WaterBackground.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_src": "src_components_effects_waterbackground_jsx",
+      "_tgt": "waterbackground_waterbackground",
+      "source": "src_components_effects_waterbackground_jsx",
+      "target": "waterbackground_waterbackground",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\components\\effects\\WaterBackground.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_src": "waterbackground_waterbackground",
+      "_tgt": "themecontext_usetheme",
+      "source": "waterbackground_waterbackground",
+      "target": "themecontext_usetheme"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\projects\\Project.jsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_src": "src_components_projects_project_jsx",
+      "_tgt": "project_project",
+      "source": "src_components_projects_project_jsx",
+      "target": "project_project",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\components\\projects\\Project.jsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_src": "project_project",
+      "_tgt": "themecontext_usetheme",
+      "source": "project_project",
+      "target": "themecontext_usetheme"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\components\\skills\\Skill.jsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_src": "src_components_skills_skill_jsx",
+      "_tgt": "skill_skill",
+      "source": "src_components_skills_skill_jsx",
+      "target": "skill_skill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\components\\skills\\Skill.jsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_src": "skill_skill",
+      "_tgt": "themecontext_usetheme",
+      "source": "skill_skill",
+      "target": "themecontext_usetheme"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\contexts\\ThemeContext.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_src": "src_contexts_themecontext_jsx",
+      "_tgt": "themecontext_usetheme",
+      "source": "src_contexts_themecontext_jsx",
+      "target": "themecontext_usetheme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\contexts\\ThemeContext.jsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_src": "src_contexts_themecontext_jsx",
+      "_tgt": "themecontext_themeprovider",
+      "source": "src_contexts_themecontext_jsx",
+      "target": "themecontext_themeprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\include\\footer\\Footer.jsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_src": "themecontext_usetheme",
+      "_tgt": "footer_footer",
+      "source": "themecontext_usetheme",
+      "target": "footer_footer"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\include\\header\\Header.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_src": "themecontext_usetheme",
+      "_tgt": "header_header",
+      "source": "themecontext_usetheme",
+      "target": "header_header"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useGsapAnimations.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_src": "src_hooks_usegsapanimations_js",
+      "_tgt": "usegsapanimations_usefadeinup",
+      "source": "src_hooks_usegsapanimations_js",
+      "target": "usegsapanimations_usefadeinup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useGsapAnimations.js",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_src": "src_hooks_usegsapanimations_js",
+      "_tgt": "usegsapanimations_usestaggerreveal",
+      "source": "src_hooks_usegsapanimations_js",
+      "target": "usegsapanimations_usestaggerreveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useGsapAnimations.js",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_src": "src_hooks_usegsapanimations_js",
+      "_tgt": "usegsapanimations_useslidein",
+      "source": "src_hooks_usegsapanimations_js",
+      "target": "usegsapanimations_useslidein",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\hooks\\useGsapAnimations.js",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_src": "src_hooks_usegsapanimations_js",
+      "_tgt": "usegsapanimations_usecountup",
+      "source": "src_hooks_usegsapanimations_js",
+      "target": "usegsapanimations_usecountup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\include\\footer\\Footer.jsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_src": "src_include_footer_footer_jsx",
+      "_tgt": "footer_footer",
+      "source": "src_include_footer_footer_jsx",
+      "target": "footer_footer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\include\\header\\Header.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_src": "src_include_header_header_jsx",
+      "_tgt": "header_header",
+      "source": "src_include_header_header_jsx",
+      "target": "header_header",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}

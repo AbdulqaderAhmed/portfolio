@@ -7,7 +7,8 @@ import Skill from "./components/skills/Skill";
 import Header from "./include/header/Header";
 import Footer from "./include/footer/Footer";
 import { ThemeProvider, useTheme } from "./contexts/ThemeContext";
-import ParticleBackground from "./components/effects/ParticleBackground";
+import WaterBackground from "./components/effects/WaterBackground";
+import UnderwaterFun from "./components/effects/UnderwaterFun";
 import CustomCursor from "./components/effects/CustomCursor";
 import ClickBurst from "./components/effects/ClickBurst";
 
@@ -19,7 +20,8 @@ function AppContent() {
       className={`${colors.primary} min-h-screen ${colors.textPrimary} remove_space transition-colors duration-300`}
     >
       {/* Global effects */}
-      <ParticleBackground />
+      <WaterBackground />
+      <UnderwaterFun />
       <CustomCursor />
       <ClickBurst />
 
